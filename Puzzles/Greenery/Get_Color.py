@@ -1,7 +1,7 @@
 import cv2 as cv # Import Opencv Library and alias as cv
 def mouse_display(event,x,y,flags,param):
     if event==cv.EVENT_LBUTTONDBLCLK:  #Works only if the event is left mouse double click
-        print("The RGB Values are:",image[x,y]) 
+        print("The BGR Values are:",image[x,y]) 
         print("The HSV Values are:",hsv[x,y])
 image_path=r"D:\Journey\CV\Puzzles\Greenery\up.jpg" 
 image=cv.imread(image_path)
